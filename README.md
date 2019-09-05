@@ -23,8 +23,11 @@ GPU- GeForce 1080 Ti
 
 ### 数据库
 DIV2K-Dataset
+
 https://data.vision.ee.ethz.ch/cvl/DIV2K/
+
 训练用数据集：DIV2K_train_HR，DIV2K_train_LR_bicubic/X4/
+
 验证用数据集：DIV2K_valid_HR, DIV2K_valid_LR_bicubic/X4/
 
 ### 下载节点:
