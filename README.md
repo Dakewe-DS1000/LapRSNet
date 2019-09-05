@@ -1,6 +1,6 @@
 # 基于深度学习的单幅图像的超分辨率
-# 基于TensorFlow1.14对以下论文的实装，已经通过训练与测试
-# "Deep Laplacian Pyramid Networks for Fast and Accurate Super-Resolution" (CVPR 2017)
+## 基于TensorFlow1.14对以下论文的实装，已经通过训练与测试
+## "Deep Laplacian Pyramid Networks for Fast and Accurate Super-Resolution" (CVPR 2017)
 
 本次实装依据论文Github：
 $ git clone https://github.com/zjuela/LapSRN-tensorflow.git
