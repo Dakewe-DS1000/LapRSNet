@@ -7,13 +7,18 @@ $ git clone https://github.com/zjuela/LapSRN-tensorflow.git
 
 ### 软件环境
 Windows10 Visual Studio Code
+
 Python3.6
+
 Cuda 8.0
+
 TensorLayer
 
 ### 硬件环境
 CPU- i7 8700K 3.70GHz
+
 RAM- 32GB
+
 GPU- GeForce 1080 Ti
 
 ### 数据库
