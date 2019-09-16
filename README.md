@@ -43,14 +43,14 @@ TESTIMAGE是输入的图像文件的整个路径与文件名加后缀
 
 > 请注意：需要将原始图像拷贝到./samples/文件夹中\
 并进行相应的文件命名，在本程序中，文件命名规则如下：\
-test_origin.bmp：是原始的高分辨率图像文件
+test_origin.bmp：是原始的高分辨率图像文件\
 test_out.bmp：是LapRSNet输出的超分辨率图像文件
 
 评价算法主要的代码如下：
 	
 	import cv2
 	import math
-	
+
 	diff = 0.0
 	# 遍历整个图像
     for y in range(oriHeight) :
