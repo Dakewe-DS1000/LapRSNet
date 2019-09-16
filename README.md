@@ -1,38 +1,43 @@
-# Deep Laplacian Pyramid Networks for Fast and Accurate Super-Resolution (CVPR 2017)
-# Python程序下载，训练与数字病理图像超分辨率的应用
+# 基于深度学习的单幅图像的超分辨率
+## 基于TensorFlow1.14对以下论文的实装，已经通过训练与测试
+## "Deep Laplacian Pyramid Networks for Fast and Accurate Super-Resolution" (CVPR 2017)
 
-本程序基于TensorFlow，使用“TensorLayer”进行编程实现
+本次实装依据论文Github：\
+$ git clone https://github.com/zjuela/LapSRN-tensorflow.git
 
-原始程序通过以下Git下载：
+### 软件环境
+Windows10 Visual Studio Code\
+Python3.6\
+Cuda 8.0\
+TensorLayer
 
-[project webpage](http://vllab1.ucmerced.edu/~wlai24/LapSRN/).
+### 硬件环境
+CPU- i7 8700K 3.70GHz\
+RAM- 32GB\
+GPU- GeForce 1080 Ti
 
-### 编程与实验环境
-python 3.6 
+### 数据库
+DIV2K-Dataset\
+https://data.vision.ee.ethz.ch/cvl/DIV2K/
 
-cuda 8.0.
+训练用数据集：DIV2K_train_HR，DIV2K_train_LR_bicubic/X4/\
+验证用数据集：DIV2K_valid_HR, DIV2K_valid_LR_bicubic/X4/
 
-### 源代码下载节点:
+### 下载节点:
 
-    $ git clone https://github.com/zjuela/LapSRN-tensorflow.git
+    $ git clone https://github.com/Dakewe-DS1000/LapRSNet.git
 
-### 训练
-在程序config.py文件中指定相应的图像数据库，并运行以下命令进行训练:
+### 训练方法
+训练之前，请检查config.py，以保证数据集的路径的正确性，然后运行以下命令进行训练：
 
-	$ python main.py
+	$ python main.py --mode train
 
-预先训练的模型使用以下数据库，请到以下网址进行数据库下载：
+### 测试方法
+指定路径与图像文件名的测试:
 
-[NTIRE 2017](http://www.vision.ee.ethz.ch/ntire17/)
+	$ python main.py --mode test --file 测试图像所在的路径以及文件名
 
-### 测试
-运行以下命令，并指定输入的图像文件:
-
-	$ python main.py -m test -f TESTIMAGE
-
-TESTIMAGE是输入的图像文件的整个路径与文件名加后缀
-
-测试的结果请在文件夹./samples/中进行查看
+测试的结果将会保存在 /samples/test/
 
 ### 评价
 使用PSNR对超分辨率之后的图像以及原始高分辨率图像进行对比
